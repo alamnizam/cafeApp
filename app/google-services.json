@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "440193244413",
+    "firebase_url": "https://mobileappdev-fd0f9-default-rtdb.firebaseio.com",
+    "project_id": "mobileappdev-fd0f9",
+    "storage_bucket": "mobileappdev-fd0f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440193244413:android:5568c6ca7c24131964b294",
+        "android_client_info": {
+          "package_name": "com.codeturtle.cafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEr6wLQXFrf7qbGmbF2MjCKyP0e8UPzPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
