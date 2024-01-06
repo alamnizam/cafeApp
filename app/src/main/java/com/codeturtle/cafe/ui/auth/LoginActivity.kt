@@ -6,8 +6,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.codeturtle.cafe.MainActivity
 import com.codeturtle.cafe.databinding.ActivityLoginBinding
+import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 
 class LoginActivity : AppCompatActivity() {
     private var _binding: ActivityLoginBinding? = null
@@ -19,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
         _binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.hide()
+        auth = Firebase.auth
         handleEvent()
     }
 
@@ -56,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun gotoHome() {
-        val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+        val intent = Intent(this@LoginActivity, MainActivity::class.java)
         startActivity(intent)
     }
 

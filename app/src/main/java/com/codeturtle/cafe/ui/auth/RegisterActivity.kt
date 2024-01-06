@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.codeturtle.cafe.MainActivity
 import com.codeturtle.cafe.databinding.ActivityRegisterBinding
-import com.codeturtle.cafe.ui.home.HomeActivity
 import com.codeturtle.cafe.utils.Validation
 import com.codeturtle.cafe.utils.toast
 import com.google.firebase.Firebase
@@ -70,7 +70,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun gotoHome() {
-        val intent = Intent(this@RegisterActivity, HomeActivity::class.java)
+        val intent = Intent(this@RegisterActivity, MainActivity::class.java)
         startActivity(intent)
     }
 
